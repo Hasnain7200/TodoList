@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+           <div class="heading"><span class="sub-heading">Hello,Hasnian </span>Good Morning!</div>
+           <div class="time">Time: <span class="watch">10.30.24</span></div>
+        </div>
+
+        <div class="mainSection">
+            <div class="mainHeading">
+                <h2>To-Do List</h2>
+                <img src="images/icon.png" alt="">
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Enter your task here" id="textBox">
+
+                <!-- For storing the data in through the button we are adding onclick ans the function in JS named as svaeTask() -->
+                <button class="addButton" onclick="saveTask()">Add</button>
+            </div>
+
+            <ul id="list-Conatiner">
+                <!-- <li class="checked">Task1</li>
+                <li>Task2</li>
+                <li>Task3</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient( 135deg,#153677,#4e085f );
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+
+}
+
+.heading{
+    font-size:25px;
+    font-weight:bolder;
+    padding-left: 10px;
+    margin: 10px;
+    color: #c1121f;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.sub-heading{
+    color: black;
+}
+
+.time{
+    font-size:25px;
+    font-weight:bolder;
+    padding-right:20px;
+    margin-top: 10px;
+    
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.watch{
+    color: #c1121f;
+}
+
+.mainSection{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.mainHeading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainHeading h2{
+    color: #c1121f;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.mainHeading img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.search{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-left:20px;
+ margin-bottom: 25px;
+ background: #edeef0;
+ border-radius:50px;
+    
+}
+
+input{
+   flex: 1;
+    font-weight: 14px;
+    border: none;
+  outline: none;
+    background: transparent;
+    padding:10px;
+    border-radius: 50px;
+
+
+}
+
+.addButton{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #c1121f;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+   cursor: pointer;
+   position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #c1121f;
+    text-decoration: line-through;
+
+}
+
+.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #c1121f;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
